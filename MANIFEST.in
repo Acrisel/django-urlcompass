@@ -1,0 +1,6 @@
+include LICENSE
+include README.rst
+include __init__.py
+recursive-include urlcompass/static *
+recursive-include urlcompass/templates *
+recursive-include urlcompass/templatetags *

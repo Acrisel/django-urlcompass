@@ -1,0 +1,33 @@
+{% load staticfiles %}
+{% load i18n %}
+{% load l10n %}
+{% load tz %}
+{% get_current_language_bidi as LANGUAGE_BIDI %}
+{% load urlcompass %}
+
+<!DOCTYPE html>
+<html dir="{{ LANGUAGE_BIDI|yesno:"rtl,ltr" }}">
+<head>
+<meta charset="UTF-8">
+<title>compass</title>
+</head>
+
+<body> 
+    <div>
+    	<h1>{{ page }}</h1>
+    </div>
+    <div>
+        {% urlcompass_show %}   
+    </div>    
+     <span class="caret"></span>
+     
+     <div class="content container" style='clear:left'>
+         <div class="row">
+             <div class="col-md-8">
+             {% block content %}
+             {% endblock content%}
+             </div>
+         </div>
+     </div>
+</body>
+</html>

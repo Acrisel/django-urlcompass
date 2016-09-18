@@ -1,0 +1,10 @@
+<div>
+   <table><tr>
+   <td><p style='float:left;'>{{ start }}</p></td>
+   {% for _, (pname, purl) in path %}
+       <td><a href="{{ purl }}">{{pname}}<</a></td>
+       <td><p>{{ sep }}</p></td>
+   {% endfor %}
+   <td><p style='float:left;'>{{ end }}</p></td>
+   </tr></table>
+</div>

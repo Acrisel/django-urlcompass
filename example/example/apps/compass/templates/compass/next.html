@@ -1,0 +1,10 @@
+{% extends "example/base.html" %}
+{% load i18n %}<html dir="{{LANGUAGE_DIRECTION}}">
+{% load l10n %}
+{% load tz %}
+
+{% block content %}
+<div>
+	<a href="{% url pageurl page=page %}">Click here next</a>
+</div>   
+{% endblock content %}
