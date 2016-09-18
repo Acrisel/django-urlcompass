@@ -46,5 +46,4 @@ urlcompass
    Links
    =====
    
-   pypi: 
-   github:
+   github: https://github.com/Acrisel/django-urlcompass
