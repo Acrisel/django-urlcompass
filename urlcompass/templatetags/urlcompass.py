@@ -182,7 +182,7 @@ class __UrlCompassShowNode(django_template.Node):
                 end='<td><p {} style="float:left;">{}</p></td>'.format(html_class, self.settings['end'])
                 middle='<td><p {} style="float:left;">{}</p></td>'.format(html_class, sep).join(bar_list)
                 result= start+middle+end
-                result='<nav {}><table><tr>{}</tr></table></nav'.format(self.settings['html_id'], result)
+                result='<nav {}><table><tr>{}</tr></table></nav>'.format(self.settings['html_id'], result)
             
         return result
   
